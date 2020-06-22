@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:makeup/tflite.dart';
 
 import 'makeup.dart';
 
@@ -19,12 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Make up"),
-        ),
-        body: Makeup()
-      ),
+      home: Makeup()
     );
   }
 }
